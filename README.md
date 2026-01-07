@@ -30,3 +30,18 @@ export DEEPSEEK_API_KEY="xxxx"
 ```shell
 conda install -c conda-forge jupyterlab
 ```
+使用`Jupyter Lab`开发的最佳实践是后台常驻，下面是相关配置（以`root`用户为例）：
+```shell
+# 生成 Jupyter Lab 配置文件，
+jupyter lab --generate-config
+```
+打开上面执行输出的`jupyter_lab_config.py`配置文件后，修改以下配置项：
+```shell
+c.ServerApp.allow_root = True # 非 root 用户启动，无需修改
+c.ServerApp.ip = '*'
+```
+使用`nohup`后台启动`Jupyter Lab`
+```shell
+nohup jupyter lab --port=8000 --NotebookApp.token='091235_newyork' --notebook-dir=./ &
+```
+`Jupyter Lab`输出的日志将会保存在`nohup.out`文件（已在`.gitignore`中过滤）。

@@ -31,3 +31,4 @@ nohup.out
 deepseek/api/.ipynb_checkpoints
 /deepseek/api/milvus_demo.db
 /deepseek/api/.milvus_demo.db.lock
+/deepseek/rednote/.ipynb_checkpoints/

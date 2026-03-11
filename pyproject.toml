@@ -1,0 +1,15 @@
+[project]
+name = "lingot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.26.0",
+    "openai==1.82.0",
+    "pymilvus[model]==2.5.10",
+    "requests==2.32.3",
+    "torch==2.7.0",
+    "tqdm==4.67.1",
+]

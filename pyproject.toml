@@ -11,9 +11,10 @@ dependencies = [
     "langgraph>=1.1.0",
     "langgraph-checkpoint>=2.0.0,<3.0.0",
     "mcp[cli]>=1.26.0",
-    "openai==1.82.0",
+    "openai>=2.41.0",
     "pymilvus[model]==2.5.10",
     "requests==2.32.3",
     "torch==2.7.0",
     "tqdm==4.67.1",
+    "deepagents>=0.5.9",
 ]
